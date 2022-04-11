@@ -1,0 +1,20 @@
+.input-container {
+  width: 100%;
+  padding: 20px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+
+.input-label {
+  float: left;
+  margin-top: -5px;
+  margin-left: 15px;
+  font-family: 'Gill Sans';
+  font-weight: lighter;
+}
+
+.checkbox {
+  float: left;
+  margin-left: 15px;
+}

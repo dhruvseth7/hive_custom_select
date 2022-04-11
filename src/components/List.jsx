@@ -3,15 +3,20 @@ import '../styles/List.css';
 import ListItem from './ListItem';
 
 
-function List() {
+function List(props) {
   return (
-    <div class="list-container">
-      <ListItem />
-      <ListItem />
-      <ListItem />
-      <ListItem />
-      <ListItem />
-    </div>
+    <>
+      {props.isVisible ? (
+        <div class="list-container">
+          <ListItem value="Japan" />
+          <ListItem value="United States" />
+          <ListItem value="Italy" />
+          <ListItem value="India" />
+          <ListItem value="China" />
+        </div>
+      ) : (<></>)}
+    </>
+
   )
 }
 

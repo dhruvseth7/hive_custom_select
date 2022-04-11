@@ -1,9 +1,15 @@
 import React from 'react';
 import '../styles/ListItem.css';
 
-function ListItem() {
+function ListItem(props) {
   return (
-    <div></div>
+    <div class="input-container">
+      <div class="input-row">
+        <input class="checkbox" type="checkbox"></input>
+        <text class="input-label">{props.value}</text>
+      </div>
+
+    </div>
   )
 }
 
