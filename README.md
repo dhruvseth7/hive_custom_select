@@ -17,7 +17,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## About the Codebase
 
-The Root file for the application is **App.js** in the *src* directory. Multiple Dropdown Menu components can be instantiated in this file
+The root file for the application is `App.js` in the *src* directory. Multiple Dropdown Menu components can be instantiated in this file.
 
 The Reusable Menu Component is defined in **Select.jsx** in the *src/components* directory. The Select Component takes in a few key parameters outlined below:
 
@@ -29,7 +29,7 @@ The Reusable Menu Component is defined in **Select.jsx** in the *src/components*
 
 **placeholder (optional)**: Optional placeholder field that is displayed on the menu button when no options are selected. Default string is displayed if this prop is empty
 
-#### Example
+### Example
 
 ```
 <Select
