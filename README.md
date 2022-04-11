@@ -15,8 +15,12 @@ Installs all dependencies and modules
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Screenshots
+## Screenshot
 
 ![alt text](/public/dropdown.png)
 
 ## About the Codebase
+
+The Root file for the application is **App.js** in the *src* directory. Multiple Dropdown Menu components can be instantiated in this file
+
+The Reusable Menu Component is defined in **Select.jsx** in the *src/components* directory. The Select Component takes in a few key parameters outlined below:
