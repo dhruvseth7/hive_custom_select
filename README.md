@@ -17,6 +17,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ## Screenshots
 
-![Alt text](/public/Dropdown Menu.jpg?raw=true "Dropdown Menu Demo")
+![Alt text](/public/Dropdown Menu.png?raw=true "Dropdown Menu Demo")
 
 ## About the Codebase
