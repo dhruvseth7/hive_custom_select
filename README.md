@@ -23,7 +23,7 @@ The Reusable Menu Component is defined in `Select.jsx` in the **src/components**
 
 ### `label (required)`
 
-String label for dropdown menu
+String label for the menu
 
 ### `type (required)`
 
