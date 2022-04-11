@@ -31,7 +31,7 @@ Either "multi" or "single" for multi or single select respectively
 
 ### `options (required)`
 
-An array of string values where each element is a unique option for the dropdown menu
+An array of string values where each element is a unique selectable option for the dropdown menu
 
 ### `placeholder (optional)`
 
