@@ -15,6 +15,7 @@ function Select(props) {
             isVisible={isVisible}
             setIsVisible={setIsVisible}
             selectedOptions={selectedOptions}
+            placeholder={props.placeholder}
           />
           <List
             label={props.label}

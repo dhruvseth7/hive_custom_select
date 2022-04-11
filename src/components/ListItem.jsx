@@ -1,19 +1,27 @@
-import React, {useState, useEffect} from 'react';
-
+import React, {useState} from 'react';
 import '../styles/ListItem.css';
 
 function ListItem(props) {
   const selectedOptions = props.selectedOptions;
   const setSelectedOptions = props.setSelectedOptions;
 
+  const isSelected = props.selectedOptions.includes(props.value);
 
   const handleClick = (event) => {
     if (props.type == "single") {
-      setSelectedOptions([props.value]);
+      if (selectedOptions.includes(props.value)) {
+        // Uncheck single select item
+        setSelectedOptions([]);
+      } else {
+        // Check single select item
+        setSelectedOptions([props.value]);
+      }
     } else if (props.type == "multi") {
       if (event.target.checked) {
+        // Selected value is not currently in list
         setSelectedOptions([...selectedOptions, props.value]);
       } else {
+        // Remove selected value from list if it is already in the list
         const optionsShallowCopy = [...selectedOptions];
         const index = optionsShallowCopy.indexOf(props.value);
         if (index !== -1) {
@@ -25,12 +33,12 @@ function ListItem(props) {
   }
 
   return (
-    <div class="input-container">
+    <div class={isSelected ? "input-container highlighted" : "input-container"}>
       <div class="input-row">
         {props.type == "multi" ? (
-          <input class="checkbox" type="checkbox" onClick={handleClick} checked={props.selectedOptions.includes(props.value)}></input>
+          <input class="checkbox" type="checkbox" onClick={handleClick} checked={isSelected}></input>
         ) :
-          <input class="checkbox" type="radio" onClick={handleClick} checked={props.selectedOptions.includes(props.value)} name={props.label}></input>
+          <input class="checkbox" type="radio" onClick={handleClick} checked={isSelected} name={props.label}></input>
         }
         <text class="input-label">{props.value}</text>
       </div>

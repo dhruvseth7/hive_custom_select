@@ -1,6 +1,6 @@
 .input-container {
   width: 100%;
-  padding: 20px;
+  padding: 25px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -20,4 +20,8 @@
 .checkbox {
   float: left;
   margin-left: 15px;
+}
+
+.highlighted {
+  background-color: #EEF5FF;
 }

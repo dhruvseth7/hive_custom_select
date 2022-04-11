@@ -6,15 +6,13 @@ import { faCaretDown } from '@fortawesome/free-solid-svg-icons'
 
 function Button(props) {
 
-
-
   return (
         <div class="btn-container">
           <text class="label">{props.label}</text>
           <button type="button" class="btn btn-light" onClick={() => props.setIsVisible(!props.isVisible)}>
             {props.selectedOptions.length < 1 ? (
               <>
-                Please Select a {props.label}
+                {props.placeholder ? (<>{props.placeholder}</>) : (<>Please select a {props.label}</>)}
               </>
             ) : (
               <>
