@@ -27,7 +27,7 @@ String label for the menu
 
 ### `type (required)`
 
-Either "multi" or "single" for multi or single select respectively. Note: For multiselect dropdowns, a **All** checkbox is rendered at the top of the list which will select/deselect all options when clicked. For singleselect dropdowns, a **None** checkbox is render which will deselect the currently selected option
+Either "multi" or "single" for multi or single select respectively. Note: For multiselect dropdowns, a **All** checkbox is rendered at the top of the list which will select/deselect all options when clicked. For singleselect dropdowns, a **None** checkbox is rendered which will deselect the currently selected option
 
 ### `options (required)`
 
