@@ -27,7 +27,7 @@ String label for dropdown menu
 
 ### `type (required)`
 
-Either "multi" or "single" for multi or single select respectively
+Either "multi" or "single" for multi or single select respectively. Note: For multiselect dropdowns, an **All** option is displayed at the top of the list which will select/deselect all options. For singleselect dropdowns, a **None** option is displayed which will deselect the selected option
 
 ### `options (required)`
 
