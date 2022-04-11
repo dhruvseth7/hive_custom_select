@@ -3,10 +3,9 @@ import Select from './components/Select';
 
 function App() {
   return (
-    <div className="App">
-      <Select label="Country" />
-
-      <Select label="City" />
+    <div>
+      <Select label="Country" type="multi" options={["Japan", "Brazil", "Turkey", "United States", "Uganda", "India"]}/>
+      <Select label="City" type="single" options={["Tokyo", "Istanbul", "Los Angeles", "Mumbai"]}/>
     </div>
   );
 }

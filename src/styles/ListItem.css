@@ -1,16 +1,19 @@
 .input-container {
   width: 100%;
   padding: 20px;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
+.input-row {
+  margin-top: -5px;
+}
 
 .input-label {
-  float: left;
   margin-top: -5px;
-  margin-left: 15px;
-  font-family: 'Gill Sans';
+  margin-left: 10px;
+  float: left;
+  font-family: 'Avenir';
   font-weight: lighter;
 }
 

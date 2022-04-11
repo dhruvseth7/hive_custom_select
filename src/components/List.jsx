@@ -3,16 +3,23 @@ import '../styles/List.css';
 import ListItem from './ListItem';
 
 
+
 function List(props) {
+
+
   return (
     <>
       {props.isVisible ? (
         <div class="list-container">
-          <ListItem value="Japan" />
-          <ListItem value="United States" />
-          <ListItem value="Italy" />
-          <ListItem value="India" />
-          <ListItem value="China" />
+          {props.options.map((value) => (
+            <ListItem
+              type={props.type}
+              label={props.label}
+              value={value}
+              selectedOptions={props.selectedOptions}
+              setSelectedOptions={props.setSelectedOptions}
+            />
+          ))}
         </div>
       ) : (<></>)}
     </>

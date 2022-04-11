@@ -5,12 +5,25 @@ import '../styles/Select.css';
 
 function Select(props) {
     const [isVisible, setIsVisible] = useState(false);
+    const [selectedOptions, setSelectedOptions] = useState([]);
 
     return (
       <div class="menu-container">
         <div class="input">
-          <Button label={props.label} isVisible={isVisible} setIsVisible={setIsVisible} />
-          <List isVisible={isVisible}/>
+          <Button
+            label={props.label}
+            isVisible={isVisible}
+            setIsVisible={setIsVisible}
+            selectedOptions={selectedOptions}
+          />
+          <List
+            label={props.label}
+            isVisible={isVisible}
+            options={props.options}
+            type={props.type}
+            selectedOptions={selectedOptions}
+            setSelectedOptions={setSelectedOptions}
+          />
         </div>
       </div>
 
