@@ -35,7 +35,6 @@ function List(props) {
   return (
     <>
     {props.isVisible ? (
-
       <div class="list-container">
         <div class={selected ? "highlighted input-container" : "input-container"}>
           <div class="input-row">

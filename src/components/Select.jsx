@@ -4,7 +4,7 @@ import List from './List';
 import '../styles/Select.css';
 
 function Select(props) {
-    const [isVisible, setIsVisible] = useState(false);
+    const [isMenuVisible, setIsMenuVisible] = useState(false);
     const [selectedOptions, setSelectedOptions] = useState([]);
 
     return (
@@ -12,14 +12,14 @@ function Select(props) {
         <div class="input">
           <Button
             label={props.label}
-            isVisible={isVisible}
-            setIsVisible={setIsVisible}
+            isMenuVisible={isMenuVisible}
+            setIsMenuVisible={setIsMenuVisible}
             selectedOptions={selectedOptions}
             placeholder={props.placeholder}
           />
           <List
             label={props.label}
-            isVisible={isVisible}
+            isVisible={isMenuVisible}
             options={props.options}
             type={props.type}
             selectedOptions={selectedOptions}

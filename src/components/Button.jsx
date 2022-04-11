@@ -9,7 +9,7 @@ function Button(props) {
   return (
         <div class="btn-container">
           <text class="label">{props.label}</text>
-          <button type="button" class="btn btn-light" onClick={() => props.setIsVisible(!props.isVisible)}>
+          <button type="button" class="btn btn-light" onClick={() => props.setIsMenuVisible(!props.isMenuVisible)}>
             {props.selectedOptions.length < 1 ? (
               <>
                 {props.placeholder ? (<>{props.placeholder}</>) : (<>Please select a {props.label}</>)}
