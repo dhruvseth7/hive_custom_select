@@ -21,11 +21,24 @@ The Root file for the application is **App.js** in the *src* directory. Multiple
 
 The Reusable Menu Component is defined in **Select.jsx** in the *src/components* directory. The Select Component takes in a few key parameters outlined below:
 
+**label (required)**: String label for dropdown menu
+
+**type (required)**: Either "multi" or "single" for multi or single select respectively
+
+**options (required)**: An array of string values where each element is a unique option for the dropdown menu
+
+**placeholder (optional)**: Optional placeholder field that is displayed on the menu button when no options are selected. Default string is displayed if this prop is empty
+
+####Example
+
 ```
-label (required): String label for dropdown menu
-type (required): Either "multi" or "single" for multi or single select respectively
-options (required): An array of string values 
-placeholder (optional):
+<Select
+  label="Age"
+  type="single"
+  options={["13-18", "18-21", "21-30", "30-40", "40-65", "65+"]}
+  placeholder="Please input your age"
+/>
+
 ```
 
 ## Screenshot
